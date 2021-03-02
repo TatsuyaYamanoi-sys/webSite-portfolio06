@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0; }
 
+h1, h2, p {
+  margin: 0; }
+
 img {
   max-width: 100%;
   vertical-align: bottom; }
@@ -14,10 +17,14 @@ img {
 .container {
   position: relative; }
 
+.mainSectionSize, .mainVisual, #works, #about, #contact, #blog {
+  height: 700px;
+  width: 100%; }
+
 /* header-> */
 .header {
   position: fixed;
-  width: 15%;
+  width: 12%;
   height: 100%; }
   .header__inner {
     display: flex;
@@ -26,7 +33,13 @@ img {
     justify-content: space-between; }
     .header__inner .gMenu ul {
       list-style: none;
-      font-size: 2rem; }
+      font-size: 1.6rem;
+      font-weight: 600; }
+      .header__inner .gMenu ul li {
+        margin-bottom: 4px; }
+        .header__inner .gMenu ul li a {
+          text-decoration: none;
+          color: black; }
     .header__inner .mMenu {
       display: none; }
   .header::after {
@@ -35,14 +48,40 @@ img {
     top: 0;
     left: 0;
     bottom: 0;
-    right: 50%;
+    right: 30%;
     z-index: -10;
     background-color: gray; }
 
 /* main-> */
 main {
   position: relative;
-  margin-left: 15%; }
+  margin-left: 12%; }
+
+.mainVisual {
+  position: relative; }
+  .mainVisual__img {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6%; }
+    .mainVisual__img .textArea .ttl {
+      font-size: 2.8rem;
+      font-weight: 600; }
+    .mainVisual__img .textArea .discription {
+      font-size: 1.2rem; }
+
+#works {
+  background-color: #9952db; }
+
+#about {
+  background-color: #2b9fe2; }
+
+#contact {
+  background-color: #2be271; }
+
+#blog {
+  background-color: #e2a82b; }
 
 /* footer-> */
 footer {

@@ -5,16 +5,6 @@ import { Works } from "./components/Works";
 export function App() {
     return(
         <>
-            <div className="mainVisual">
-                <div className="mainVisual__img">
-                    <div className="textArea">
-                    <p className="ttl">title</p>
-                        <span className="discription">
-                            discription
-                        </span>
-                    </div>
-                </div>
-            </div>
             <Works />
             <section id="about">
                 <div className="inner">

@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
+h1, h2, p {
+    margin: 0;
+}
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -14,10 +17,14 @@ img {
 .container{
     position: relative;
 }
+.mainSectionSize {
+    height: 700px;
+    width: 100%;
+}
 /* header-> */
 .header {
     position: fixed;
-    width: 15%;
+    width: 12%;
     height: 100%;
     &__inner {
         @extend .content-width;
@@ -28,7 +35,15 @@ img {
         & .gMenu {
             & ul {
                 list-style: none;
-                font-size: 2rem;
+                font-size: 1.6rem;
+                font-weight: 600;
+                & li {
+                    margin-bottom: 4px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
             }
         }
         & .mMenu {
@@ -41,7 +56,7 @@ img {
         top: 0;
         left: 0;
         bottom: 0;
-        right: 50%;
+        right: 30%;
         z-index: -10;
         background-color: gray;
     }
@@ -49,7 +64,47 @@ img {
 /* main-> */
 main {
     position: relative;
-    margin-left: 15%;
+    margin-left: 12%;
+}
+.mainVisual {
+    @extend .mainSectionSize;
+    position: relative;
+    &__img {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 6%;
+        // background: url();
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        & .textArea {
+            & .ttl{
+                font-size: 2.8rem;
+                font-weight: 600;
+            }
+            & .discription {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+#works {
+    @extend .mainSectionSize;
+    background-color: rgb(153, 82, 219);
+}
+#about {
+    @extend .mainSectionSize;
+    background-color: rgb(43, 159, 226);
+}
+#contact {
+    @extend .mainSectionSize;
+    background-color: rgb(43, 226, 113);
+}
+#blog {
+    @extend .mainSectionSize;
+    background-color: rgb(226, 168, 43);
 }
 /* footer-> */
 footer {

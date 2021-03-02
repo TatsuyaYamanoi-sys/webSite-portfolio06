@@ -1,5 +1,4 @@
 import { React } from "react";
-import { ReactDOM } from "react-dom";
 
 const topWorksDOM = (        
     <section id="works">
@@ -17,16 +16,16 @@ const topWorksDOM = (
 );
 
 export function Works () {
-    const DOM = '' ;
-    const worksClickHandler = (e) => {
-        if(e === ''){
-            DOM = '' ;
-        }else if(e === ''){
-            DOM = '';
-        }else{
-            DOM = topWorksDOM ;
-        }
-    }
+    const DOM = topWorksDOM ;
+    // const worksClickHandler = (e) => {
+    //     if(e === ''){
+    //         DOM = '' ;
+    //     }else if(e === ''){
+    //         DOM = '';
+    //     }else{
+    //         DOM = topWorksDOM ;
+    //     }
+    // }
     return(
         DOM
     );
