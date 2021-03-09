@@ -5,10 +5,28 @@ import { Works } from "./components/Works";
 export function App() {
     return(
         <>
-            <Works />
-            <section id="about">
+            <section className="about">
                 <div className="inner">
                     <h1>ABOUT</h1>
+                    <div className="about__card">
+                <img src="" alt="aboutImage"/>
+                <div className="textArea">
+                    <p className="ttl">～とは</p>
+                    <span className="discription">
+                        discription
+                    </span>
+                </div>
+                </div>
+                <div className="about__card">
+                    <img src="" alt="aboutImage"/>
+                    <div className="textArea">
+                        <p className="ttl">クリエイター</p>
+                        <span className="discription">
+                            discription
+                        </span>
+                    </div>
+                </div>
+                <div className="about__card">
                     <img src="" alt="aboutImage"/>
                     <div className="textArea">
                         <p className="ttl">title</p>
@@ -17,26 +35,28 @@ export function App() {
                         </span>
                     </div>
                 </div>
+            </div>
             </section>{/*<About /> */}
-            <section id="contact">
+            <Works />
+            <section className="contact">
                 <div className="inner">
                     <h1>CONTACT</h1>
                     <img src="./img/" alt="contactImage"/>
-                    <form action="/" method="post">
+                    <form action="./ajax.php" method="post">
                         <label htmlFor="name">お名前
-                        <input type="text"/>
+                        <input type="text" name="name"/>
                         </label>
                         <label htmlFor="email">メールアドレス
                         <input type="email" name="email"/>
                         </label>
-                        <label htmlFor="contents">お問い合わせ内容
-                        <textarea name="contents" cols="30" rows="10"></textarea>
+                        <label htmlFor="message">お問い合わせ内容
+                        <textarea name="message" cols="30" rows="10"></textarea>
                         </label>
                         <input type="submit" value="確認"/>
                     </form>
                 </div>
             </section>{/*<Contact /> */}
-            <section id="blog">
+            <section className="blog">
                 <div className="inner">
                     <h1>BLOG</h1>
                 </div>

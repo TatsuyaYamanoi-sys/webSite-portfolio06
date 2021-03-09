@@ -17,7 +17,7 @@ class MainClass {
     _init() {
         new ClickScroll('a[href^="#"]', 400, "swing");
     }
-}
+}// Class Mainは競合する
 
 class ClickScroll {
     constructor(els) {
@@ -29,7 +29,7 @@ class ClickScroll {
             this.DOM[i].addEventListener('click', (e) => {
                 e.preventDefault();
                 let href = this.DOM[i].getAttribute('href');
-                let targetElement = document.getElementById(href.replace('#', ''));
+                let targetElement = document.querySelector(href.replace("#", "."));
                 const position = targetElement.getBoundingClientRect().top;
                 const nowPosition = window.pageYOffset;
                 const rootMargin = 0;

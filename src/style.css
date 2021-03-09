@@ -17,8 +17,8 @@ img {
 .container {
   position: relative; }
 
-.mainSectionSize, .mainVisual, #works, #about, #contact, #blog {
-  height: 700px;
+.mainSectionSize, .mainVisual, .works, .about, .contact, .blog {
+  height: 800px;
   width: 100%; }
 
 /* header-> */
@@ -71,16 +71,16 @@ main {
     .mainVisual__img .textArea .discription {
       font-size: 1.2rem; }
 
-#works {
+.works {
   background-color: #9952db; }
 
-#about {
+.about {
   background-color: #2b9fe2; }
 
-#contact {
+.contact {
   background-color: #2be271; }
 
-#blog {
+.blog {
   background-color: #e2a82b; }
 
 /* footer-> */

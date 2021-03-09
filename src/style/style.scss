@@ -18,7 +18,7 @@ img {
     position: relative;
 }
 .mainSectionSize {
-    height: 700px;
+    height: 800px;
     width: 100%;
 }
 /* header-> */
@@ -90,19 +90,19 @@ main {
         }
     }
 }
-#works {
+.works {
     @extend .mainSectionSize;
     background-color: rgb(153, 82, 219);
 }
-#about {
+.about {
     @extend .mainSectionSize;
     background-color: rgb(43, 159, 226);
 }
-#contact {
+.contact {
     @extend .mainSectionSize;
     background-color: rgb(43, 226, 113);
 }
-#blog {
+.blog {
     @extend .mainSectionSize;
     background-color: rgb(226, 168, 43);
 }
